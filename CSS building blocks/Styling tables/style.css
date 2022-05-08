@@ -1,0 +1,51 @@
+html {
+	font-family: 'heveletica neue', heveletica, arial, sans-serif;
+}
+
+
+thead th, tfoot th {
+	font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+th {
+	letter-spacing 2px;
+}
+
+td {
+	letter-spacing: 1px;
+}
+
+tbody td {
+	text-align: center;
+}
+
+tfoot th {
+	text-align: right;
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	border: 3px solid purple;
+}
+
+thead th:nth-child(1) {
+	width: 30%;
+}
+
+thead th:nth-child(2) {
+	width: 20%;
+}
+
+thead th:nth-child(3) {
+	width: 20%;
+}
+
+thead th:nth-child(4) {
+	width: 35%;
+}
+
+th, td {
+	padding: 20px;
+}
