@@ -1,0 +1,106 @@
+/* General setup */
+
+html {
+	font-size: 16px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+h1, h2 {
+	font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+li, p {
+	line-height: 1.5;
+}
+
+h1 {
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+p {
+	letter-spacing: 2px;
+	word-spacing: 5px;
+}
+
+section p:first-child {
+	text-indent: 20px;
+}
+
+
+a {
+	outline: none;
+	border-bottom: 1px solid black;
+	text-decoration: none;
+}
+
+a:link, a:visited, a:focus {
+	color: red;
+	outline: none;
+
+}
+
+a:hover {
+	border-bottom: none;
+}
+
+a:active {
+	background: black;
+	color: white;
+}
+
+a[href^="https"] {
+	background: url(external-link-52.png) no-repeat right;
+	background-size: 16px;
+	padding-right: 19px;
+}
+
+ul, ol {
+	list-style: square red;
+	list-style-position: inside;
+	font-size: 1.5rem;
+}
