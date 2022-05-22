@@ -13,9 +13,14 @@ const aliceTumbling = [
   const alice2 = document.querySelector("#alice2");
   const alice3 = document.querySelector("#alice3");
 
-  alice1.animate(aliceTumbling, aliceTiming)
-        .finished.then(
-            () => alice2.animate(aliceTumbling, aliceTiming)
-                .finished.then(() => alice3.animate(aliceTumbling, aliceTiming))
-            );
-        
+  async function animation(alice) {
+    return alice.animate(aliceTumbling, aliceTiming).finished;
+  }
+
+async function animateAlice() {
+    await animation(alice1);
+    await animation(alice2);
+    animation(alice3);
+}
+
+animateAlice();
