@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My test page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p>This is my first form</p>
+    <form>
+      <h1>Payment form</h1>
+      <p>
+        Following fields are required:
+        <strong><span aria-label="" required>*</span></strong>
+      </p>
+      <section>
+        <h2>Contact information</h2>
+        <fieldset>
+          <legend>Title</legend>
+          <ul>
+            <li>
+              <label for="title_1"
+                ><input
+                  type="radio"
+                  name="title"
+                  id="title_2"
+                  value="K"
+                />King</label
+              >
+            </li>
+            <li>
+              <label for="title_2"
+                ><input
+                  type="radio"
+                  name="title"
+                  id="title_2"
+                  value="Q"
+                />Queen</label
+              >
+            </li>
+            <li>
+              <label for="title_3"
+                ><input
+                  type="radio"
+                  name="title"
+                  id="title_3"
+                  value="J"
+                />Joker</label
+              >
+            </li>
+          </ul>
+        </fieldset>
+        <p>
+          <label for="name">
+            <span>Name: </span
+            ><strong><span aria-label="required">*</span></strong></label
+          >
+          <input type="text" name="username" id="name" />
+        </p>
+        <p>
+          <label for="pwd">
+            <span>Password: </span
+            ><strong><span aria-label="required">*</span></strong></label
+          >
+          <input type="password" id="pwd" name="password" />
+        </p>
+      </section>
+
+      <section>
+        <h2>Payment information</h2>
+        <p>
+          <label for="card"><span>Card type:</span></label
+          ><select name="usercard" id="card">
+            <option value="visa">Visa</option>
+            <option value="mc">Mastercard</option>
+            <option value="amsex">American Express</option>
+          </select>
+        </p>
+        <p>
+          <label for="number"
+            ><span>Card number:</span
+            ><strong><span aria-label="required">*</span></strong></label
+          >
+          <input type="tel" id="number" name="" cardnumber />
+        </p>
+
+        <p>
+          <label for="expiration"
+            ><span>Expiration date:</span
+            ><strong><span aria-label="required">*</span></strong></label
+          >
+          <input
+            type="text"
+            id="expiration"
+            required="true"
+            placeholder="MM/YY"
+            pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$"
+          />
+        </p>
+      </section>
+      <section>
+        <p>
+          <button type="submit">Validate the payment</button>
+        </p>
+      </section>
+    </form>
+  </body>
+</html>
